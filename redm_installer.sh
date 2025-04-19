@@ -17,9 +17,9 @@ echo '📄 Erstelle start.sh für txAdmin Setup...'
 
 cat > /home/RedM/server/start.sh <<EOF
 #!/bin/bash
-cd \$(dirname "\$0")
-./FXServer
-EOF
+cd "$(dirname "$0")"
+./run.sh
+
 
 chmod +x /home/RedM/server/start.sh
 echo '✅ start.sh wurde erstellt!'
